@@ -21,6 +21,8 @@ class controlador_wt_hogar extends system {
         $modelo = new wt_hogar(link: $link);
         $html = new wt_hogar_html();
         $obj_link = new links_menu($this->registro_id);
+        $this->rows_lista[] = 'observaciones';
+        $this->rows_lista[] = 'url';
         parent::__construct(html:$html, link: $link,modelo:  $modelo, obj_link: $obj_link, paths_conf: $paths_conf);
 
         $this->titulo_lista = 'Hogares';

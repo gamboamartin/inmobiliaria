@@ -10,7 +10,7 @@ namespace controllers;
 
 use gamboamartin\system\links_menu;
 use gamboamartin\system\system;
-use html\html;
+use gamboamartin\template\html;
 use html\wt_hogar_html;
 use models\wt_hogar;
 use PDO;
@@ -25,6 +25,7 @@ class controlador_wt_hogar extends system {
         $obj_link = new links_menu($this->registro_id);
         $this->rows_lista[] = 'observaciones';
         $this->rows_lista[] = 'url';
+        $this->rows_lista[] = 'img_descripcion';
         parent::__construct(html:$html, link: $link,modelo:  $modelo, obj_link: $obj_link, paths_conf: $paths_conf);
 
         $this->titulo_lista = 'Hogares';

@@ -19,7 +19,13 @@
 <div class="control-group col-sm-6">
     <label class="control-label" for="url">Url</label>
     <div class="controls">
-        <input type="text" name="url" value="" class="form-control" required="" id="Url" placeholder="url">
+        <input type="text" name="url" value="" class="form-control" required="" id="Url" placeholder="Url">
+    </div>
+</div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="img_descripcion">Img Descripcion</label>
+    <div class="controls">
+        <input type="text" name="img_descripcion" value="" class="form-control" required="" id="Url" placeholder="img_descripcion">
     </div>
 </div>
 <div class="control-group btn-alta">

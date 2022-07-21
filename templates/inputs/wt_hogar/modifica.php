@@ -36,4 +36,10 @@
         <input type="text" name="img_descripcion" value="<?php echo $controlador->row_upd->descripcion ?>" class="form-control" required="" id="Url" placeholder="img_descripcion">
     </div>
 </div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="georeferencia">Georeferencia</label>
+    <div class="controls">
+        <input type="text" name="georeferencia" value="<?php echo $controlador->row_upd->georeferencia ?>" class="form-control" required="" id="georeferencia" placeholder="Georeferencia">
+    </div>
+</div>
 <?php include (new views())->ruta_templates.'botons/submit/modifica_bd.php';?>

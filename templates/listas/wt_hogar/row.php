@@ -8,6 +8,7 @@
     <!-- Dynamic generated -->
     <td><?php echo $row->wt_hogar_observaciones; ?></td>
     <td><?php echo $row->wt_hogar_url; ?></td>
+    <td><?php echo $row->wt_hogar_georeferencia; ?></td>
 
     <!-- End dynamic generated -->
 

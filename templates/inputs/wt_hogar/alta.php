@@ -25,7 +25,13 @@
 <div class="control-group col-sm-6">
     <label class="control-label" for="img_descripcion">Img Descripcion</label>
     <div class="controls">
-        <input type="text" name="img_descripcion" value="" class="form-control" required="" id="Url" placeholder="img_descripcion">
+        <input type="text" name="img_descripcion" value="" class="form-control" required="" id="img_descripcion" placeholder="img_descripcion">
+    </div>
+</div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="georeferencia">Georeferencia</label>
+    <div class="controls">
+        <input type="text" name="georeferencia" value="" class="form-control" required="" id="georeferencia" placeholder="Georeferencia">
     </div>
 </div>
 <div class="control-group btn-alta">

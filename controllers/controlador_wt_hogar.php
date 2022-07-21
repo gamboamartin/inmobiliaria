@@ -26,6 +26,7 @@ class controlador_wt_hogar extends system {
         $this->rows_lista[] = 'observaciones';
         $this->rows_lista[] = 'url';
         $this->rows_lista[] = 'img_descripcion';
+        $this->rows_lista[] = 'georeferencia';
         parent::__construct(html:$html, link: $link,modelo:  $modelo, obj_link: $obj_link, paths_conf: $paths_conf);
 
         $this->titulo_lista = 'Hogares';

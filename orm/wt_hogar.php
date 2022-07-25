@@ -8,8 +8,8 @@ use stdClass;
 class wt_hogar extends modelo{
     public function __construct(PDO $link){
         $tabla = __CLASS__;
-        $columnas = array($tabla=>false);
-        $campos_obligatorios = array();
+        $columnas = array($tabla=>false, 'wt_proposito'=>$tabla);
+        $campos_obligatorios = array('wt_proposito_id');
 
         $no_duplicados = array();
 

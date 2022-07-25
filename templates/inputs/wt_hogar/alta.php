@@ -1,3 +1,5 @@
+<?php /** @var \controllers\controlador_wt_proposito $controlador  controlador en ejecucion */ ?>
+
 <div class="control-group col-sm-6">
     <label class="control-label" for="descripcion">Descripcion</label>
     <div class="controls">
@@ -32,6 +34,12 @@
     <label class="control-label" for="georeferencia">Georeferencia</label>
     <div class="controls">
         <input type="text" name="georeferencia" value="" class="form-control" required="" id="georeferencia" placeholder="Georeferencia">
+    </div>
+</div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="wt_proposito">Proposito</label>
+    <div class="controls">
+        <?php echo $controlador->inputs->select->wt_proposito_id; ?>
     </div>
 </div>
 <div class="control-group btn-alta">

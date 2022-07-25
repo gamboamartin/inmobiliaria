@@ -8,6 +8,7 @@
  */
 namespace controllers;
 
+use gamboamartin\errores\errores;
 use gamboamartin\system\links_menu;
 use gamboamartin\system\system;
 use gamboamartin\template\html;
@@ -28,7 +29,6 @@ class controlador_wt_proposito extends system {
         $this->titulo_lista = 'Proposito';
 
     }
-
 
 
 

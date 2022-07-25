@@ -2,6 +2,7 @@
 <?php /** @var stdClass $row  viene de registros del controler*/ ?>
 
 <tr>
+
     <td><?php echo $row->wt_proposito_id; ?></td>
     <td><?php echo $row->wt_proposito_descripcion; ?></td>
     <td><?php echo $row->wt_proposito_codigo; ?></td>

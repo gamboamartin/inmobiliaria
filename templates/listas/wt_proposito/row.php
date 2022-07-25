@@ -6,6 +6,7 @@
     <td><?php echo $row->wt_proposito_id; ?></td>
     <td><?php echo $row->wt_proposito_descripcion; ?></td>
     <td><?php echo $row->wt_proposito_codigo; ?></td>
+    <td><?php echo $row->wt_proposito_descripcion_select; ?></td>
     <!-- Dynamic generated -->
 
     <!-- End dynamic generated -->

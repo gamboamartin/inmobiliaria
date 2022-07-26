@@ -42,6 +42,12 @@
         <?php echo $controlador->inputs->select->wt_proposito_id; ?>
     </div>
 </div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="tipo_inmueble">Tipo Inmueble</label>
+    <div class="controls">
+        <?php echo $controlador->inputs->select->wt_tipo_inmueble_id; ?>
+    </div>
+</div>
 <div class="control-group btn-alta">
     <div class="controls">
         <button type="submit" class="btn btn-success" name="guarda">Alta</button>

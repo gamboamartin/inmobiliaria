@@ -5,11 +5,11 @@ use gamboamartin\errores\errores;
 use PDO;
 use stdClass;
 
-class wt_hogar extends modelo{
+class wt_tipo_inmueble extends modelo{
     public function __construct(PDO $link){
         $tabla = __CLASS__;
-        $columnas = array($tabla=>false, 'wt_proposito'=>$tabla, 'wt_tipo_inmueble'=>$tabla);
-        $campos_obligatorios = array('wt_proposito_id', 'wt_tipo_inmueble_id');
+        $columnas = array($tabla=>false);
+        $campos_obligatorios = array();
 
         $no_duplicados = array();
 

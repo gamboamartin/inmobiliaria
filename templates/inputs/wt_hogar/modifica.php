@@ -52,5 +52,11 @@ use config\views;
         <?php echo $controlador->inputs->select->wt_proposito_id; ?>
     </div>
 </div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="wt_proposito">Proposito</label>
+    <div class="controls">
+        <?php echo $controlador->inputs->select->wt_tipo_inmueble_id; ?>
+    </div>
+</div>
 
 <?php include (new views())->ruta_templates.'botons/submit/modifica_bd.php';?>

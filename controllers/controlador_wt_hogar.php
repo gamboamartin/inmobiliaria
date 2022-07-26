@@ -14,7 +14,9 @@ use gamboamartin\system\system;
 use gamboamartin\template\html;
 use html\wt_hogar_html;
 use html\wt_proposito_html;
+use html\wt_tipo_inmueble_html;
 use models\wt_hogar;
+use models\wt_tipo_inmueble;
 use PDO;
 use stdClass;
 
@@ -30,6 +32,7 @@ class controlador_wt_hogar extends system {
         $this->rows_lista[] = 'img_descripcion';
         $this->rows_lista[] = 'georeferencia';
         $this->rows_lista[] = 'wt_proposito_id';
+        $this->rows_lista[] = 'wt_tipo_inmueble_id';
         parent::__construct(html:$html, link: $link,modelo:  $modelo, obj_link: $obj_link, paths_conf: $paths_conf);
 
         $this->titulo_lista = 'Hogares';
@@ -54,6 +57,15 @@ class controlador_wt_hogar extends system {
         $this->inputs->select = new stdClass();
         $this->inputs->select->wt_proposito_id = $select;
 
+        $select = (new wt_tipo_inmueble_html(html: $this->html_base))->select_wt_tipo_inmueble_id(cols:12,
+            con_registros: true, id_selected: -1, link: $this->link);
+        if (errores::$error) {
+            $error = $this->errores->error(mensaje: 'Error al generar select', data: $select);
+            print_r($error);
+            die('Error');
+        }
+        $this->inputs->select->wt_tipo_inmueble_id = $select;
+
         return $r_alta;
 
     }
@@ -76,6 +88,17 @@ class controlador_wt_hogar extends system {
 
         $this->inputs->select = new stdClass();
         $this->inputs->select->wt_proposito_id = $select;
+
+        $select = (new wt_tipo_inmueble_html(html: $this->html_base))->select_wt_tipo_inmueble_id(cols:12,con_registros:true,
+            id_selected:$this->row_upd->wt_tipo_inmueble_id, link: $this->link);
+        if(errores::$error){
+            $error = $this->errores->error(mensaje: 'Error al generar select',data:  $select);
+            print_r($error);
+            die('Error');
+        }
+
+        $this->inputs->select->wt_tipo_inmueble_id = $select;
+
 
         return $r_modifica;
     }

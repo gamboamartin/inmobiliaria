@@ -70,5 +70,11 @@ use config\views;
         <input type="text" name="construccion" value="<?php echo $controlador->row_upd->construccion; ?>" class="form-control" required="" id="construccion" placeholder="Construccion">
     </div>
 </div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="niveles">Niveles</label>
+    <div class="controls">
+        <input type="text" name="niveles" value="<?php echo $controlador->row_upd->niveles; ?>" class="form-control" required="" id="niveles" placeholder="Niveles">
+    </div>
+</div>
 
 <?php include (new views())->ruta_templates.'botons/submit/modifica_bd.php';?>

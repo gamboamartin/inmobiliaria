@@ -60,6 +60,12 @@
         <input type="text" name="construccion" value="" class="form-control" required="" id="construccion" placeholder="Construccion">
     </div>
 </div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="niveles">Niveles</label>
+    <div class="controls">
+        <input type="text" name="niveles" value="" class="form-control" required="" id="niveles" placeholder="Niveles">
+    </div>
+</div>
 <div class="control-group btn-alta">
     <div class="controls">
         <button type="submit" class="btn btn-success" name="guarda">Alta</button>

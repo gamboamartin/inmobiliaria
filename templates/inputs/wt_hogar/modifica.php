@@ -53,9 +53,15 @@ use config\views;
     </div>
 </div>
 <div class="control-group col-sm-6">
-    <label class="control-label" for="wt_proposito">Proposito</label>
+    <label class="control-label" for="wt_proposito">Tipo Inmueble</label>
     <div class="controls">
         <?php echo $controlador->inputs->select->wt_tipo_inmueble_id; ?>
+    </div>
+</div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="terreno">Terreno</label>
+    <div class="controls">
+        <input type="text" name="terreno" value="<?php echo $controlador->row_upd->terreno; ?>" class="form-control" required="" id="terreno" placeholder="Terreno">
     </div>
 </div>
 

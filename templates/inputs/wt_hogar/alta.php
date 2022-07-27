@@ -48,6 +48,12 @@
         <?php echo $controlador->inputs->select->wt_tipo_inmueble_id; ?>
     </div>
 </div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="georeferencia">Terreno</label>
+    <div class="controls">
+        <input type="text" name="terreno" value="" class="form-control" required="" id="terreno" placeholder="Terreno">
+    </div>
+</div>
 <div class="control-group btn-alta">
     <div class="controls">
         <button type="submit" class="btn btn-success" name="guarda">Alta</button>

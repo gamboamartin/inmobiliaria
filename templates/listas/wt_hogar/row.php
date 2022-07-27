@@ -11,6 +11,7 @@
     <td><?php echo $row->wt_hogar_georeferencia; ?></td>
     <td><?php echo $row->wt_hogar_wt_proposito_id; ?></td>
     <td><?php echo $row->wt_hogar_wt_tipo_inmueble_id; ?></td>
+    <td><?php echo $row->wt_hogar_terreno ?></td>
 
 
     <!-- End dynamic generated -->

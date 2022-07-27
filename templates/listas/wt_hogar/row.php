@@ -12,6 +12,7 @@
     <td><?php echo $row->wt_hogar_wt_proposito_id; ?></td>
     <td><?php echo $row->wt_hogar_wt_tipo_inmueble_id; ?></td>
     <td><?php echo $row->wt_hogar_terreno ?></td>
+    <td><?php echo $row->wt_hogar_construccion ?></td>
 
 
     <!-- End dynamic generated -->

@@ -49,9 +49,15 @@
     </div>
 </div>
 <div class="control-group col-sm-6">
-    <label class="control-label" for="georeferencia">Terreno</label>
+    <label class="control-label" for="terreno">Terreno</label>
     <div class="controls">
         <input type="text" name="terreno" value="" class="form-control" required="" id="terreno" placeholder="Terreno">
+    </div>
+</div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="construccion">Construccion</label>
+    <div class="controls">
+        <input type="text" name="construccion" value="" class="form-control" required="" id="construccion" placeholder="Construccion">
     </div>
 </div>
 <div class="control-group btn-alta">

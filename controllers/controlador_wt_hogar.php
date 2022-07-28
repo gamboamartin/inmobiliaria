@@ -31,6 +31,7 @@ class controlador_wt_hogar extends system {
         $this->rows_lista[] = 'url';
         $this->rows_lista[] = 'img_descripcion';
         $this->rows_lista[] = 'georeferencia';
+        $this->rows_lista[] = 'ubicacion';
         $this->rows_lista[] = 'wt_proposito_id';
         $this->rows_lista[] = 'wt_tipo_inmueble_id';
         $this->rows_lista[] = 'terreno';

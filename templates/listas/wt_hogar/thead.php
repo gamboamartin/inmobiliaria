@@ -6,6 +6,7 @@
     <th data-breakpoints="xs sm md"  data-type="html">Observaciones</th>
     <th data-breakpoints="xs sm md"  data-type="html">Url</th>
     <th data-breakpoints="xs sm md"  data-type="html">Georeferencia</th>
+    <th data-breakpoints="xs sm md"  data-type="html">Ubicacion</th>
     <th data-breakpoints="xs sm md"  data-type="html">Proposito</th>
     <th data-breakpoints="xs sm md"  data-type="html">Tipo Inmueble</th>
     <th data-breakpoints="xs sm md"  data-type="html">Terreno</th>

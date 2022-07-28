@@ -47,6 +47,12 @@ use config\views;
     </div>
 </div>
 <div class="control-group col-sm-6">
+    <label class="control-label" for="ubicacion">Ubicacion</label>
+    <div class="controls">
+        <input type="text" name="ubicacion" value="<?php echo $controlador->row_upd->ubicacion; ?>" class="form-control" required="" id="ubicacion" placeholder="Ubicacion">
+    </div>
+</div>
+<div class="control-group col-sm-6">
     <label class="control-label" for="wt_proposito">Proposito</label>
     <div class="controls">
         <?php echo $controlador->inputs->select->wt_proposito_id; ?>

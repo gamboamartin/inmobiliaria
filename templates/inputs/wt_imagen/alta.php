@@ -13,9 +13,21 @@
     </div>
 </div>
 <div class="control-group col-sm-6">
-    <label class="control-label" for="wt_proposito">Proposito</label>
+    <label class="control-label" for="doc_extension">Extension</label>
     <div class="controls">
         <?php echo $controlador->inputs->select->doc_extension_id; ?>
+    </div>
+</div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="wt_hogar">Hogar</label>
+    <div class="controls">
+        <?php echo $controlador->inputs->select->wt_hogar_id; ?>
+    </div>
+</div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="imagen">Imagen</label>
+    <div class="controls">
+        <input type="file" name="imagen">
     </div>
 </div>
 <div class="control-group btn-alta">

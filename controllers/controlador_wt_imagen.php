@@ -13,6 +13,7 @@ use gamboamartin\system\links_menu;
 use gamboamartin\system\system;
 use gamboamartin\template\html;
 use html\doc_extension_html;
+use html\wt_hogar_html;
 use html\wt_imagen_html;
 use models\wt_imagen;
 use PDO;
@@ -26,6 +27,8 @@ class controlador_wt_imagen extends system {
         $html = new wt_imagen_html(html: $html_base);
         $obj_link = new links_menu($this->registro_id);
         $this->rows_lista[] = 'doc_extension_id';
+        $this->rows_lista[] = 'wt_hogar_id';
+
         parent::__construct(html:$html, link: $link,modelo:  $modelo, obj_link: $obj_link, paths_conf: $paths_conf);
 
         $this->titulo_lista = 'Imagen';
@@ -50,6 +53,16 @@ class controlador_wt_imagen extends system {
         $this->inputs->select = new stdClass();
         $this->inputs->select->doc_extension_id = $select;
 
+        $select = (new wt_hogar_html(html: $this->html_base))->select_wt_hogar_id(cols:12,con_registros: true,
+            id_selected: -1, link: $this->link);
+        if (errores::$error) {
+            $error = $this->errores->error(mensaje: 'Error al generar select', data: $select);
+            print_r($error);
+            die('Error');
+        }
+
+        $this->inputs->select->wt_hogar_id = $select;
+
         return $r_alta;
 
     }
@@ -72,6 +85,16 @@ class controlador_wt_imagen extends system {
 
         $this->inputs->select = new stdClass();
         $this->inputs->select->doc_extension_id = $select;
+
+        $select = (new wt_hogar_html(html: $this->html_base))->select_wt_hogar_id(cols:12,con_registros:true,
+            id_selected:$this->row_upd->wt_hogar_id, link: $this->link);
+        if(errores::$error){
+            $error = $this->errores->error(mensaje: 'Error al generar select',data:  $select);
+            print_r($error);
+            die('Error');
+        }
+
+        $this->inputs->select->wt_hogar_id = $select;
 
 
         return $r_modifica;

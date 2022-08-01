@@ -5,11 +5,11 @@ use gamboamartin\errores\errores;
 use PDO;
 use stdClass;
 
-class wt_proposito extends modelo{
+class wt_imagen extends modelo{
     public function __construct(PDO $link){
         $tabla = __CLASS__;
-        $columnas = array($tabla=>false);
-        $campos_obligatorios = array();
+        $columnas = array($tabla=>false, 'doc_extension'=>$tabla);
+        $campos_obligatorios = array('doc_extension_id');
 
         $no_duplicados = array();
 

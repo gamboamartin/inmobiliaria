@@ -1,4 +1,4 @@
-<?php /** @var \controllers\controlador_wt_proposito $controlador  controlador en ejecucion */ ?>
+<?php /** @var base\controller\controlador_base $controlador  viene de registros del controler/lista */ ?>
 
 <div class="control-group col-sm-6">
     <label class="control-label" for="descripcion">Descripcion</label>

@@ -25,6 +25,12 @@
     </div>
 </div>
 <div class="control-group col-sm-6">
+    <label class="control-label" for="wt_contexto">Contexto</label>
+    <div class="controls">
+        <?php echo $controlador->inputs->select->wt_contexto_id; ?>
+    </div>
+</div>
+<div class="control-group col-sm-6">
     <label class="control-label" for="imagen">Imagen</label>
     <div class="controls">
         <input type="file" name="imagen">

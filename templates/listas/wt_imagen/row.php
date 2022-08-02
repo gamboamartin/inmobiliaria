@@ -8,6 +8,7 @@
     <td><?php echo $row->wt_imagen_codigo; ?></td>
     <td><?php echo $row->wt_imagen_doc_extension_id; ?></td>
     <td><?php echo $row->wt_imagen_wt_hogar_id; ?></td>
+    <td><?php echo $row->wt_imagen_wt_contexto_id; ?></td>
     <!-- Dynamic generated -->
 
     <!-- End dynamic generated -->

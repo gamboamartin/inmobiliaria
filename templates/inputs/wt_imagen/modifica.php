@@ -1,9 +1,9 @@
 <?php /** @var base\controller\controlador_base $controlador  viene de registros del controler/lista */ ?>
 <?php use config\views;?>
 <div class="control-group col-sm-6">
-    <label class="control-label" for="descripcion">Id</label>
+    <label class="control-label" for="id">Id</label>
     <div class="controls">
-        <input type="text" name="descripcion" value="<?php echo $controlador->row_upd->id ?>" class="form-control" required="" id="Id" placeholder="Descripcion" readonly>
+        <input type="text" name="id" value="<?php echo $controlador->row_upd->id ?>" class="form-control" required="" id="Id" placeholder="Id" readonly>
     </div>
 </div>
 <div class="control-group col-sm-6">

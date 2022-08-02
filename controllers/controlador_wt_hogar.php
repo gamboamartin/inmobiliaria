@@ -37,6 +37,10 @@ class controlador_wt_hogar extends system {
         $this->rows_lista[] = 'terreno';
         $this->rows_lista[] = 'construccion';
         $this->rows_lista[] = 'niveles';
+        $this->rows_lista[] = 'banio';
+        $this->rows_lista[] = 'recamara';
+        $this->rows_lista[] = 'patio';
+        $this->rows_lista[] = 'estacionamiento';
         parent::__construct(html:$html, link: $link,modelo:  $modelo, obj_link: $obj_link, paths_conf: $paths_conf);
 
         $this->titulo_lista = 'Hogares';

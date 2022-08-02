@@ -7,6 +7,12 @@
     </div>
 </div>
 <div class="control-group col-sm-6">
+    <label class="control-label" for="descripcion_select">Descripcion Select</label>
+    <div class="controls">
+        <input type="text" name="descripcion_select" value="" class="form-control" required="" id="descripcion_select" placeholder="Descripcion Select">
+    </div>
+</div>
+<div class="control-group col-sm-6">
     <label class="control-label" for="codigo">Codigo</label>
     <div class="controls">
         <input type="text" name="codigo" value="" class="form-control" required="" id="codigo" placeholder="Codigo">
@@ -70,6 +76,30 @@
     <label class="control-label" for="niveles">Niveles</label>
     <div class="controls">
         <input type="text" name="niveles" value="" class="form-control" required="" id="niveles" placeholder="Niveles">
+    </div>
+</div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="banio">Baños</label>
+    <div class="controls">
+        <input type="text" name="banio" value="" class="form-control" required="" id="banio" placeholder="Baños">
+    </div>
+</div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="recamara">Recamaras</label>
+    <div class="controls">
+        <input type="text" name="recamara" value="" class="form-control" required="" id="recamara" placeholder="Recamara">
+    </div>
+</div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="patio">Patio</label>
+    <div class="controls">
+        <input type="text" name="patio" value="" class="form-control" required="" id="patio" placeholder="Patio">
+    </div>
+</div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="estacionamiento">Estacionamiento</label>
+    <div class="controls">
+        <input type="text" name="estacionamiento" value="" class="form-control" required="" id="estacionamiento" placeholder="Estacionamiento">
     </div>
 </div>
 <div class="control-group btn-alta">

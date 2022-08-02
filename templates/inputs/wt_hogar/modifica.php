@@ -5,15 +5,21 @@ use config\generales;
 use config\views;
 ?>
 <div class="control-group col-sm-6">
-    <label class="control-label" for="descripcion">Id</label>
+    <label class="control-label" for="id">Id</label>
     <div class="controls">
-        <input type="text" name="descripcion" value="<?php echo $controlador->row_upd->id; ?>" class="form-control" required="" id="Id" placeholder="Descripcion" readonly>
+        <input type="text" name="id" value="<?php echo $controlador->row_upd->id; ?>" class="form-control" required="" id="id" placeholder="Id" readonly>
     </div>
 </div>
 <div class="control-group col-sm-6">
     <label class="control-label" for="descripcion">Descripcion</label>
     <div class="controls">
         <input type="text" name="descripcion" value="<?php echo $controlador->row_upd->descripcion; ?>" class="form-control" required="" id="descripcion" placeholder="Descripcion">
+    </div>
+</div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="descripcion_select">Descripcion Select</label>
+    <div class="controls">
+        <input type="text" name="descripcion_select" value="<?php echo $controlador->row_upd->descripcion_select; ?>" class="form-control" required="" id="descripcion_select" placeholder="Descripcion Select">
     </div>
 </div>
 <div class="control-group col-sm-6">
@@ -80,6 +86,30 @@ use config\views;
     <label class="control-label" for="niveles">Niveles</label>
     <div class="controls">
         <input type="text" name="niveles" value="<?php echo $controlador->row_upd->niveles; ?>" class="form-control" required="" id="niveles" placeholder="Niveles">
+    </div>
+</div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="banio">Baños</label>
+    <div class="controls">
+        <input type="text" name="banio" value="<?php echo $controlador->row_upd->banio; ?>" class="form-control" required="" id="banio" placeholder="Baños">
+    </div>
+</div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="recamara">Recamaras</label>
+    <div class="controls">
+        <input type="text" name="recamara" value="<?php echo $controlador->row_upd->recamara; ?>" class="form-control" required="" id="recamara" placeholder="Recamara">
+    </div>
+</div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="patio">Patio</label>
+    <div class="controls">
+        <input type="text" name="patio" value="<?php echo $controlador->row_upd->patio; ?>" class="form-control" required="" id="patio" placeholder="Patio">
+    </div>
+</div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="estacionamiento">Estacionamiento</label>
+    <div class="controls">
+        <input type="text" name="estacionamiento" value="<?php echo $controlador->row_upd->estacionamiento; ?>" class="form-control" required="" id="estacionamiento" placeholder="Estacionamiento">
     </div>
 </div>
 

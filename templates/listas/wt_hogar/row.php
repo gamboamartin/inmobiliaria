@@ -15,6 +15,10 @@
     <td><?php echo $row->wt_hogar_terreno; ?></td>
     <td><?php echo $row->wt_hogar_construccion; ?></td>
     <td><?php echo $row->wt_hogar_niveles; ?></td>
+    <td><?php echo $row->wt_hogar_banio; ?></td>
+    <td><?php echo $row->wt_hogar_recamara; ?></td>
+    <td><?php echo $row->wt_hogar_patio; ?></td>
+    <td><?php echo $row->wt_hogar_estacionamiento; ?></td>
 
 
     <!-- End dynamic generated -->

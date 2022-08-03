@@ -30,4 +30,10 @@
         <?php echo $controlador->inputs->select->wt_hogar_id; ?>
     </div>
 </div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="wt_context_img">Contexto Img</label>
+    <div class="controls">
+        <?php echo $controlador->inputs->select->wt_context_img_id; ?>
+    </div>
+</div>
 <?php include (new views())->ruta_templates.'botons/submit/modifica_bd.php';?>

@@ -6,6 +6,8 @@
     <td><?php echo $row->wt_contexto_id; ?></td>
     <td><?php echo $row->wt_contexto_descripcion; ?></td>
     <td><?php echo $row->wt_contexto_codigo; ?></td>
+    <td><?php echo $row->wt_contexto_descripcion_select; ?></td>
+    <td><?php echo $row->wt_contexto_wt_context_img_id; ?></td>
     <!-- Dynamic generated -->
 
     <!-- End dynamic generated -->

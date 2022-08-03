@@ -1,5 +1,3 @@
-<?php /** @var base\controller\controlador_base $controlador  viene de registros del controler/lista */ ?>
-
 <div class="control-group col-sm-6">
     <label class="control-label" for="descripcion">Descripcion</label>
     <div class="controls">
@@ -13,21 +11,9 @@
     </div>
 </div>
 <div class="control-group col-sm-6">
-    <label class="control-label" for="doc_extension">Extension</label>
+    <label class="control-label" for="descripcion_select">Descripcion Select</label>
     <div class="controls">
-        <?php echo $controlador->inputs->select->doc_extension_id; ?>
-    </div>
-</div>
-<div class="control-group col-sm-6">
-    <label class="control-label" for="wt_hogar">Hogar</label>
-    <div class="controls">
-        <?php echo $controlador->inputs->select->wt_hogar_id; ?>
-    </div>
-</div>
-<div class="control-group col-sm-6">
-    <label class="control-label" for="imagen">Imagen</label>
-    <div class="controls">
-        <input type="file" name="imagen">
+        <input type="text" name="descripcion_select" value="" class="form-control" required="" id="descripcion_select" placeholder="Descripcion Select">
     </div>
 </div>
 <div class="control-group btn-alta">

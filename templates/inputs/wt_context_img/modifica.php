@@ -1,9 +1,9 @@
 <?php /** @var base\controller\controlador_base $controlador  viene de registros del controler/lista */ ?>
 <?php use config\views;?>
 <div class="control-group col-sm-6">
-    <label class="control-label" for="id">Id</label>
+    <label class="control-label" for="descripcion">Id</label>
     <div class="controls">
-        <input type="text" name="id" value="<?php echo $controlador->row_upd->id ?>" class="form-control" required="" id="Id" placeholder="Id" readonly>
+        <input type="text" name="descripcion" value="<?php echo $controlador->row_upd->id ?>" class="form-control" required="" id="Id" placeholder="Descripcion" readonly>
     </div>
 </div>
 <div class="control-group col-sm-6">
@@ -19,15 +19,9 @@
     </div>
 </div>
 <div class="control-group col-sm-6">
-    <label class="control-label" for="doc_extension">Extension</label>
+    <label class="control-label" for="descripcion_select">Descripcion Select</label>
     <div class="controls">
-        <?php echo $controlador->inputs->select->doc_extension_id; ?>
-    </div>
-</div>
-<div class="control-group col-sm-6">
-    <label class="control-label" for="wt_hogar">Hogar</label>
-    <div class="controls">
-        <?php echo $controlador->inputs->select->wt_hogar_id; ?>
+        <input type="text" name="descripcion_select" value="<?php echo $controlador->row_upd->descripcion_select ?>" class="form-control" required="" id="descripcion_select" placeholder="Descripcion Select">
     </div>
 </div>
 <?php include (new views())->ruta_templates.'botons/submit/modifica_bd.php';?>

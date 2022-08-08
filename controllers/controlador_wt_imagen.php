@@ -101,8 +101,8 @@ class controlador_wt_imagen extends system {
     public function modifica_bd(bool $header, bool $ws): array|stdClass
     {
         $documento_ins['doc_tipo_documento_id'] = 1;
-        $documento_ins['name'] = $_FILES['imagen']['name'];
-        $documento_ins['tmp_name'] = $_FILES['imagen']['tmp_name'];
+        //$documento_ins['name'] = $_FILES['imagen']['name'];
+        //$documento_ins['tmp_name'] = $_FILES['imagen']['tmp_name'];
 
         $wt_imagen = (new wt_imagen($this->link))->registro(registro_id: $this->registro_id);
         $documento_id = $wt_imagen['doc_documento_id'];
@@ -119,7 +119,11 @@ class controlador_wt_imagen extends system {
             $this->retorno_error('Error al modificar documento', $r_documento, $header, $ws);
         }
 
-        $_POST['doc_documento_id'] = $r_documento->registro['doc_documento_id'];
+
+
+        $_POST['doc_documento_id'] = $r_documento->registro_id;
+        
+
         $modifica_bd = parent::modifica_bd(header: false,ws: false);
         if(errores::$error){
             $this->retorno_error('Error al modificar imagen', $modifica_bd, $header, $ws);

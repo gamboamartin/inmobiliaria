@@ -51,7 +51,7 @@
                     <div class="control-group col-sm-6">
                         <label class="control-label" for="imagen">Imagen</label>
                         <div class="controls">
-                            <input type="file" name="imagen">
+                            <input type="file" name="imagen" required>
                         </div>
                     </div>
                     <div class="control-group btn-alta">

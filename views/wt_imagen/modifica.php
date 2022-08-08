@@ -59,7 +59,7 @@ use config\views; ?>
                     <div class="control-group col-sm-6">
                         <label class="control-label" for="imagen">Imagen</label>
                         <div class="controls">
-                            <input type="file" name="imagen">
+                            <input type="file" name="imagen" required>
                         </div>
                     </div>
                     <?php include (new views())->ruta_templates.'botons/submit/modifica_bd.php';?>

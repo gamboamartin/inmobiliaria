@@ -57,7 +57,9 @@
         "gamboa.martin/documento": "dev-master",
         "gamboa.martin/cat_sat": "dev-main",
         "gamboa.martin/direccion_postal": "dev-main",
-        "gamboa.martin/js_base": "dev-master"
+        "gamboa.martin/js_base": "dev-master",
+        "gamboa.martin/comercial": "dev-master",
+        "gamboa.martin/organigrama": "dev-main"
 
     },
     "require-dev": {

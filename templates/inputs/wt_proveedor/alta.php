@@ -16,6 +16,12 @@
         <input type="text" name="descripcion_select" value="" class="form-control" required="" id="descripcion_select" placeholder="descripcion_select">
     </div>
 </div>
+<div class="control-group col-sm-6">
+    <label class="control-label" for="rfc">RFC</label>
+    <div class="controls">
+        <input type="text" name="rfc" value="" class="form-control" required="" id="rfc" placeholder="RFC">
+    </div>
+</div>
 <div class="control-group btn-alta">
     <div class="controls">
         <button type="submit" class="btn btn-success" name="guarda">Alta</button>

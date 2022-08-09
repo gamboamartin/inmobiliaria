@@ -19,6 +19,12 @@
     </div>
 </div>
 <div class="control-group col-sm-6">
+    <label class="control-label" for="rfc">RFC</label>
+    <div class="controls">
+        <input type="text" name="rfc" value="<?php echo $controlador->row_upd->rfc ?>" class="form-control" required="" id="rfc" placeholder="RFC">
+    </div>
+</div>
+<div class="control-group col-sm-6">
     <label class="control-label" for="descripcion_select">Descripcion Select</label>
     <div class="controls">
         <input type="text" name="descripcion_select" value="<?php echo $controlador->row_upd->descripcion_select ?>" class="form-control" required="" id="descripcion_select" placeholder="descripcion_select">

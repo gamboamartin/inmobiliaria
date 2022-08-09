@@ -7,6 +7,7 @@
     <td><?php echo $row->wt_proveedor_descripcion; ?></td>
     <td><?php echo $row->wt_proveedor_codigo; ?></td>
     <td><?php echo $row->wt_proveedor_descripcion_select; ?></td>
+    <td><?php echo $row->wt_proveedor_rfc; ?></td>
     <!-- Dynamic generated -->
 
     <!-- End dynamic generated -->

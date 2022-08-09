@@ -14,15 +14,12 @@ use gamboamartin\system\system;
 use gamboamartin\template\html;
 use html\doc_extension_html;
 use html\wt_context_img_html;
-use html\wt_contexto_html;
 use html\wt_hogar_html;
 use html\wt_imagen_html;
 use models\doc_documento;
-use models\doc_extension;
 use models\wt_imagen;
 use PDO;
 use stdClass;
-use ZipStream\File;
 
 class controlador_wt_imagen extends system {
 

@@ -8,6 +8,7 @@
  */
 namespace controllers;
 
+use config\generales;
 use gamboamartin\errores\errores;
 use gamboamartin\system\links_menu;
 use gamboamartin\system\system;
@@ -111,6 +112,26 @@ class controlador_wt_hogar extends system {
         return $r_modifica;
     }
 
+    public function ver_observaciones(bool $header, bool $ws = false, string $breadcrumbs = '',
+                             bool $aplica_form = false, bool $muestra_btn = true): array|string
+    {
+
+        if($this->registro_id<=0){
+            return $this->retorno_error(mensaje: 'Error registro_id debe ser mayor a 0', data: $this->registro_id,
+                header:  $header, ws: $ws);
+        }
+
+        if(!isset($this->row_upd)){
+            $this->row_upd = new stdClass();
+        }
+        if(!isset($this->row_upd->status)){
+            $this->row_upd->status = '';
+        }
+
+        $this->row_upd = (object)($this->modelo->registro(registro_id: $this->registro_id));
+
+        return array();
+    }
 
 
 

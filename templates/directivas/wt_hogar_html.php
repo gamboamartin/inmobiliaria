@@ -1,6 +1,7 @@
 <?php
 namespace html;
 
+use controllers\controlador_wt_hogar;
 use gamboamartin\errores\errores;
 use gamboamartin\system\html_controler;
 use models\wt_hogar;
@@ -19,4 +20,8 @@ class wt_hogar_html extends html_controler {
         return $select;
     }
 
+    public function ver_observaciones(controlador_wt_hogar $controler): array|controlador_wt_hogar
+    {
+        return $controler;
+    }
 }

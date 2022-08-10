@@ -14,17 +14,12 @@
         </a>
     </td>
     <td><?php echo $row->wt_hogar_url; ?></td>
-    <td><?php echo $row->wt_hogar_georeferencia; ?></td>
     <td><?php echo $row->wt_hogar_ubicacion; ?></td>
-    <td><?php echo $row->wt_hogar_wt_proposito_id; ?></td>
-    <td><?php echo $row->wt_hogar_wt_tipo_inmueble_id; ?></td>
-    <td><?php echo $row->wt_hogar_terreno; ?></td>
-    <td><?php echo $row->wt_hogar_construccion; ?></td>
-    <td><?php echo $row->wt_hogar_niveles; ?></td>
-    <td><?php echo $row->wt_hogar_banio; ?></td>
-    <td><?php echo $row->wt_hogar_recamara; ?></td>
-    <td><?php echo $row->wt_hogar_patio; ?></td>
-    <td><?php echo $row->wt_hogar_estacionamiento; ?></td>
+    <td>
+        <a href="./index.php?seccion=wt_hogar&accion=detalles_ubicacion&registro_id=<?php echo $row->wt_hogar_id; ?>&session_id=<?php echo $controlador->session_id; ?>" class="btn btn-info"><i class="glyphicon glyphicon-eye-open"></i>
+            Detalles ubicacion
+        </a>
+    </td>
 
 
     <!-- End dynamic generated -->

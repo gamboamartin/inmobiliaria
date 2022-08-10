@@ -6,7 +6,6 @@
     <?php //var_dump($controlador); exit;?>
     <td><?php echo $row->wt_hogar_id; ?></td>
     <td><?php echo $row->wt_hogar_descripcion; ?></td>
-    <td><?php echo $row->wt_hogar_codigo; ?></td>
     <!-- Dynamic generated -->
     <td>
         <a href="./index.php?seccion=wt_hogar&accion=ver_observaciones&registro_id=<?php echo $row->wt_hogar_id; ?>&session_id=<?php echo $controlador->session_id; ?>" class="btn btn-info"><i class="glyphicon glyphicon-eye-open"></i>
@@ -15,6 +14,10 @@
     </td>
     <td><?php echo $row->wt_hogar_url; ?></td>
     <td><?php echo $row->wt_hogar_ubicacion; ?></td>
+    <td><a href="https://www.google.com.mx/maps/place/<?php echo $row->wt_hogar_georeferencia; ?>" class="btn btn-info" target="_blank"><i class="glyphicon glyphicon-eye-open"></i>
+            Ver ubicacion
+        </a>
+    </td>
     <td>
         <a href="./index.php?seccion=wt_hogar&accion=detalles_ubicacion&registro_id=<?php echo $row->wt_hogar_id; ?>&session_id=<?php echo $controlador->session_id; ?>" class="btn btn-info"><i class="glyphicon glyphicon-eye-open"></i>
             Detalles ubicacion

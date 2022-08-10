@@ -117,7 +117,7 @@ class controlador_wt_imagen extends system {
         }
 
         $r_documento = (new doc_documento($this->link))->registro(registro_id: $r_modifica_documento->registro_id);
-        
+
         $_POST['doc_documento_id'] = $r_modifica_documento->registro_id;
 
         $_POST['doc_extension_id'] = $r_documento['doc_extension_id'];

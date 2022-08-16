@@ -7,7 +7,7 @@
     <th data-breakpoints="xs sm md"  data-type="html">Ubicacion</th>
     <th data-breakpoints="xs sm md"  data-type="html">Ver ubicacion</th>
     <th data-breakpoints="xs sm md"  data-type="html">Detalles ubicacion</th>
-    <th data-breakpoints="xs md" class="control"  data-type="html">Modifica</th>
-    <th data-breakpoints="xs md" class="control"  data-type="html">Elimina</th>
+    <th data-breakpoints="xs md" class="control"  data-type="html" data-filterable="false">Modifica</th>
+    <th data-breakpoints="xs md" class="control"  data-type="html" data-filterable="false">Elimina</th>
 </tr>
 </thead>

@@ -34,22 +34,6 @@ use config\views;
         <input type="text" name="codigo" value="<?php echo $controlador->row_upd->codigo; ?>" class="form-control" required="" id="codigo" placeholder="Codigo">
     </div>
 </div>
-    <div class="control-group col-sm-6">
-
-        <label class="control-label" for="observaciones">Observaciones</label>
-        <div class="controls">
-            <textarea class="form-control" name="observaciones" id="observaciones" required="true" cols="30" rows="5"><?php echo $controlador->row_upd->observaciones; ?></textarea>
-        </div>
-        <script>
-            $('#observaciones').summernote({
-                tabsize: 1,
-                height: 100
-            });
-        </script>
-    </div>
-
-
-
 
 <div class="control-group col-sm-6">
     <label class="control-label" for="url">Url</label>
@@ -129,5 +113,21 @@ use config\views;
         <input type="text" name="estacionamiento" value="<?php echo $controlador->row_upd->estacionamiento; ?>" class="form-control" required="" id="estacionamiento" placeholder="Estacionamiento">
     </div>
 </div>
+
+    <div class="row form-group">
+        <div class="col-md-12 mb-3 mb-md-0">
+            <div class="row form-group">
+                <label class="control-label" for="observaciones">Observaciones</label>
+            </div>
+            <textarea class="form-control" name="observaciones" id="observaciones" required="true" cols="30" rows="5"><?php echo $controlador->row_upd->observaciones; ?></textarea>
+        </div>
+        <script>
+            $('#observaciones').summernote({
+                tabsize: 1,
+                height: 100
+            });
+        </script>
+    </div>
+
 
 <?php include (new views())->ruta_templates.'botons/submit/modifica_bd.php';?>

@@ -1,5 +1,9 @@
 <?php /** @var base\controller\controlador_base $controlador  viene de registros del controler/lista */ ?>
-
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
 <div class="control-group col-sm-6">
     <label class="control-label" for="descripcion">Descripcion</label>
     <div class="controls">
@@ -18,12 +22,7 @@
         <input type="text" name="codigo" value="" class="form-control" required="" id="codigo" placeholder="Codigo">
     </div>
 </div>
-<div class="control-group col-sm-6">
-    <label class="control-label" for="observaciones">Observaciones</label>
-    <div class="controls">
-        <input type="text" name="observaciones" value="" class="form-control" required="" id="observaciones" placeholder="Observaciones">
-    </div>
-</div>
+
 <div class="control-group col-sm-6">
     <label class="control-label" for="url">Url</label>
     <div class="controls">
@@ -102,9 +101,27 @@
         <input type="text" name="estacionamiento" value="" class="form-control" required="" id="estacionamiento" placeholder="Estacionamiento">
     </div>
 </div>
-<div class="control-group btn-alta">
-    <div class="controls">
-        <button type="submit" class="btn btn-success" name="guarda">Alta</button>
-        <button type="submit" class="btn btn-success" name="guarda_otro">Genero Otro</button>
+<div class="row form-group">
+    <div class="col-md-12 mb-3 mb-md-0">
+        <div class="row form-group">
+            <label class="control-label" for="observaciones">Observaciones</label>
+        </div>
+        <textarea class="form-control" name="observaciones" id="observaciones" required="true" cols="30" rows="5"></textarea>
+    </div>
+    <script>
+        $('#observaciones').summernote({
+            tabsize: 1,
+            height: 100
+        });
+    </script>
+</div>
+
+<div class="form-group">
+    <div class="col-md-12">
+        <center>
+            <p> </p>
+            <button type="submit" class="btn btn-success" name="guarda">Alta</button>
+            <button type="submit" class="btn btn-success" name="guarda_otro">Genero Otro</button>
+        </center>
     </div>
 </div>

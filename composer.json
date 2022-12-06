@@ -55,13 +55,19 @@
         "gamboa.martin/system": "dev-main",
         "gamboa.martin/services": "dev-main",
         "gamboa.martin/documento": "dev-master",
-        "gamboa.martin/cat_sat": "dev-main",
-        "gamboa.martin/direccion_postal": "dev-main",
+        "gamboa.martin/cat_sat": "^1.0.0",
+        "gamboa.martin/direccion_postal": "^1.0.0",
         "gamboa.martin/js_base": "dev-master",
         "gamboa.martin/comercial": "dev-master",
         "gamboa.martin/organigrama": "dev-main",
         "gamboa.martin/im_registro_patronal": "dev-main",
-        "gamboa.martin/empleado": "dev-main"
+        "gamboa.martin/xml_cfdi_4": "dev-master",
+        "gamboa.martin/banco": "dev-main",
+        "gamboa.martin/empleado": "dev-main",
+        "gamboa.martin/proceso": "dev-main",
+        "gamboa.martin/facturacion": "dev-main",
+        "gamboa.martin/nomina": "dev-master"
+
 
     },
     "require-dev": {
